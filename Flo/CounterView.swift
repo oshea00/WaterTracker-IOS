@@ -58,6 +58,26 @@ class CounterView: UIView {
         outlineColor.setStroke()
         outlinePath.lineWidth = Constants.lineWidth
         outlinePath.stroke()
+        
+        // Some CoreGraphics stuff to make dial markers
+        let context = UIGraphicsGetCurrentContext()!
+        context.saveGState()
+        outlineColor.setFill()
+        let markWidth: CGFloat = 5.0
+        let markSize: CGFloat = 10.0
+        let markerPath = UIBezierPath(rect: CGRect(x: -markWidth / 2, y: 0, width: markWidth, height: markSize))
+        context.translateBy(x: rect.width/2, y: rect.height / 2)
+        
+        for i in 1...Constants.numberOfGlasses {
+            context.saveGState()
+            let angle = arcLengthPerGlass * CGFloat(i) + startAngle - .pi / 2
+            context.rotate(by: angle)
+            context.translateBy(x: 0, y: rect.height / 2 - markSize)
+            markerPath.fill()
+            context.restoreGState()
+        }
+        
+        context.restoreGState()
     }
         
 }
