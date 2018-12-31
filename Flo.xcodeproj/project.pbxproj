@@ -12,6 +12,8 @@
 		46768ED021D98183008EBDF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46768ECE21D98183008EBDF6 /* Main.storyboard */; };
 		46768ED221D98184008EBDF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46768ED121D98184008EBDF6 /* Assets.xcassets */; };
 		46768ED521D98184008EBDF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46768ED321D98184008EBDF6 /* LaunchScreen.storyboard */; };
+		46768EDD21D984AE008EBDF6 /* PushButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46768EDC21D984AE008EBDF6 /* PushButton.swift */; };
+		46768EDF21D98EC2008EBDF6 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46768EDE21D98EC2008EBDF6 /* CounterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		46768ED121D98184008EBDF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46768ED421D98184008EBDF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46768ED621D98184008EBDF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46768EDC21D984AE008EBDF6 /* PushButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushButton.swift; sourceTree = "<group>"; };
+		46768EDE21D98EC2008EBDF6 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +61,11 @@
 				46768ECA21D98183008EBDF6 /* AppDelegate.swift */,
 				46768ECC21D98183008EBDF6 /* ViewController.swift */,
 				46768ECE21D98183008EBDF6 /* Main.storyboard */,
+				46768EDE21D98EC2008EBDF6 /* CounterView.swift */,
 				46768ED121D98184008EBDF6 /* Assets.xcassets */,
 				46768ED321D98184008EBDF6 /* LaunchScreen.storyboard */,
 				46768ED621D98184008EBDF6 /* Info.plist */,
+				46768EDC21D984AE008EBDF6 /* PushButton.swift */,
 			);
 			path = Flo;
 			sourceTree = "<group>";
@@ -137,6 +143,8 @@
 			files = (
 				46768ECD21D98183008EBDF6 /* ViewController.swift in Sources */,
 				46768ECB21D98183008EBDF6 /* AppDelegate.swift in Sources */,
+				46768EDD21D984AE008EBDF6 /* PushButton.swift in Sources */,
+				46768EDF21D98EC2008EBDF6 /* CounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
